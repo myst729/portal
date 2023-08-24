@@ -19,7 +19,7 @@
         padding: 200px 160px;
         user-select: none;
       }
-      a, img {
+      a:not(.edit), img {
         display: block;
         height: 120px;
         width: 120px;
@@ -29,13 +29,11 @@
       .edit {
         background: white;
         color: steelblue;
-        display: inline;
-        height: auto;
-        width: auto;
+        border-radius: 1em;
+        padding: .2em .8em;
         position: fixed;
         top: 1em;
         right: 1em;
-        padding: 0.2em 0.8em;
       }
     </style>
   </head>
@@ -60,6 +58,6 @@
     <a href="https://dribbble.com/"><img src="icons/dribbble.jpg" alt="Dribbble" /></a>
     <a href="https://pixilart.com/"><img src="icons/pixilart.jpg" alt="PixilArt" /></a>
 
-    <a href="https://github.com/myst729/portal/edit/master/index.html">https://github.com/myst729/portal/</a>
+    <a class="edit" href="https://github.com/myst729/portal/edit/master/index.html">https://github.com/myst729/portal/</a>
   </body>
 </html>
