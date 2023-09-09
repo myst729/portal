@@ -6,6 +6,9 @@
     <title>Wormhole</title>
     <style>
       body {
+        height: 500vh;
+      }
+      div {
         box-sizing: border-box;
         background-image: url(bg.jpg);
         background-size: cover;
@@ -18,8 +21,14 @@
         margin: 0;
         padding: 200px 160px;
         user-select: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        height: 100vh;
+        translate: -50% -50%;
       }
-      a:not(.edit), img {
+      a:not(.edit), img, svg {
         display: block;
         height: 120px;
         width: 120px;
@@ -35,29 +44,52 @@
         top: 1em;
         right: 1em;
       }
+      .eyeball {
+        animation: spin both linear 7;
+        animation-timeline: scroll(root);
+      }
+      @keyframes spin {
+        to {
+          transform: rotate(-360deg);
+        }
+      }
     </style>
   </head>
   <body>
-    <a href="https://myst729.github.io/"><img src="icons/myst729.png" alt="dg" /></a>
-    <a href="https://github.com/"><img src="icons/github.jpg" alt="GitHub" /></a>
-    <a href="https://stackoverflow.com/users/1032492/leo"><img src="icons/stack_overflow.png" alt="Stack Overflow" /></a>
-    <a href="https://mail.google.com/mail/u/0/#inbox"><img src="icons/gmail.jpg" alt="GMail" /></a>
-    <a href="https://outlook.live.com/mail/0/"><img src="icons/hotmail.png" alt="HotMail" /></a>
-    <a href="https://inoreader.com/all_articles"><img src="icons/inoreader.png" alt="InoReader" /></a>
-    <a href="https://to-do.live.com/tasks/inbox"><img src="icons/todo.png" alt="To Do" /></a>
-    <a href="https://trello.com/"><img src="icons/trello.jpg" alt="Trello" /></a>
-    <a href="https://linkedin.com/feed/"><img src="icons/linkedin.png" alt="LinkedIn" /></a>
-    <a href="https://twitter.com/"><img src="icons/twitter.png" alt="Twitter" /></a>
-    <a href="https://facebook.com/"><img src="icons/facebook.jpg" alt="Facebook" /></a>
-    <a href="https://google.com.hk/"><img src="icons/google.jpg" alt="Google" /></a>
-    <a href="https://wolframalpha.com/"><img src="icons/wolfram_alpha.jpg" alt="WolframAlpha" /></a>
-    <a href="https://wikipedia.org/"><img src="icons/wikipedia.jpg" alt="Wikipedia" /></a>
-    <a href="https://youtube.com/"><img src="icons/youtube.jpg" alt="YouTube" /></a>
-    <a href="https://unsplash.com/"><img src="icons/unsplash.jpg" alt="Unsplash" /></a>
-    <a href="https://photopea.com/"><img src="icons/photopea.jpg" alt="Photopea" /></a>
-    <a href="https://dribbble.com/"><img src="icons/dribbble.jpg" alt="Dribbble" /></a>
-    <a href="https://pixilart.com/"><img src="icons/pixilart.jpg" alt="PixilArt" /></a>
-
     <a class="edit" href="https://github.com/myst729/portal/edit/master/index.html">https://github.com/myst729/portal/</a>
+    <div>
+      <a href="https://myst729.github.io/">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.110678 16.110678">
+          <g transform="translate(-53.795 -280.464)">
+            <circle cx="61.85" cy="288.519" r="8.055" fill="#ffd42a" />
+            <circle cx="64.809" cy="285.296" r="1.88" fill="#fff" />
+            <circle class="eyeball" cx="65.778" cy="284.63" r=".7" fill="#1a1a1a" transform-origin="64.809 285.296" transform="rotate(0)" />
+            <circle cx="59.03" cy="283.826" r="1.88" fill="#fff" />
+            <circle class="eyeball" cx="58.027" cy="284.448" r=".7" fill="#1a1a1a" transform-origin="59.03 283.826" transform="rotate(0)" />
+            <path d="M56.382 282.614a8.055 8.055 0 0 0-2.587 5.905 8.055 8.055 0 0 0 8.055 8.055 8.055 8.055 0 0 0 7.005-4.087 8.055 8.055 0 0 1-.46.404 8.055 8.055 0 0 1-.656.469 8.055 8.055 0 0 1-.698.4 8.055 8.055 0 0 1-.735.33 8.055 8.055 0 0 1-.764.253 8.055 8.055 0 0 1-.786.177 8.055 8.055 0 0 1-.8.097 8.055 8.055 0 0 1-.569.02 8.055 8.055 0 0 1-.804-.04 8.055 8.055 0 0 1-.796-.12 8.055 8.055 0 0 1-.78-.2 8.055 8.055 0 0 1-.757-.276 8.055 8.055 0 0 1-.725-.35 8.055 8.055 0 0 1-.686-.421 8.055 8.055 0 0 1-.641-.487 8.055 8.055 0 0 1-.59-.55 8.055 8.055 0 0 1-.531-.604 8.055 8.055 0 0 1-.468-.655 8.055 8.055 0 0 1-.4-.699 8.055 8.055 0 0 1-.33-.735 8.055 8.055 0 0 1-.254-.764 8.055 8.055 0 0 1-.176-.785 8.055 8.055 0 0 1-.097-.8 8.055 8.055 0 0 1-.02-.57 8.055 8.055 0 0 1 .04-.804 8.055 8.055 0 0 1 .12-.796 8.055 8.055 0 0 1 .2-.78 8.055 8.055 0 0 1 .275-.757 8.055 8.055 0 0 1 .35-.725 8.055 8.055 0 0 1 .065-.105z" fill="#ffbc2a" />
+            <path d="M64.96 290.714c-.763.714-1.946.974-2.718 1.07.022.055.043.111.074.165l1.136 1.967c.352.61 1.125.817 1.734.465l.318-.184c.61-.352.817-1.125.466-1.734z" fill="#f55" />
+            <path d="M57.468 289.673s.377 2.488 4.268 2.488m4.268-2.488s-.377 2.488-4.268 2.488" fill="none" stroke="#1a1a1a" stroke-linecap="round" stroke-linejoin="round" />
+          </g>
+        </svg>
+      </a>
+      <a href="https://github.com/"><img src="icons/github.jpg" alt="GitHub" /></a>
+      <a href="https://stackoverflow.com/users/1032492/leo"><img src="icons/stack_overflow.png" alt="Stack Overflow" /></a>
+      <a href="https://mail.google.com/mail/u/0/#inbox"><img src="icons/gmail.jpg" alt="GMail" /></a>
+      <a href="https://outlook.live.com/mail/0/"><img src="icons/hotmail.png" alt="HotMail" /></a>
+      <a href="https://inoreader.com/all_articles"><img src="icons/inoreader.png" alt="InoReader" /></a>
+      <a href="https://to-do.live.com/tasks/inbox"><img src="icons/todo.png" alt="To Do" /></a>
+      <a href="https://trello.com/"><img src="icons/trello.jpg" alt="Trello" /></a>
+      <a href="https://linkedin.com/feed/"><img src="icons/linkedin.png" alt="LinkedIn" /></a>
+      <a href="https://twitter.com/"><img src="icons/twitter.png" alt="Twitter" /></a>
+      <a href="https://facebook.com/"><img src="icons/facebook.jpg" alt="Facebook" /></a>
+      <a href="https://google.com.hk/"><img src="icons/google.jpg" alt="Google" /></a>
+      <a href="https://wolframalpha.com/"><img src="icons/wolfram_alpha.jpg" alt="WolframAlpha" /></a>
+      <a href="https://wikipedia.org/"><img src="icons/wikipedia.jpg" alt="Wikipedia" /></a>
+      <a href="https://youtube.com/"><img src="icons/youtube.jpg" alt="YouTube" /></a>
+      <a href="https://unsplash.com/"><img src="icons/unsplash.jpg" alt="Unsplash" /></a>
+      <a href="https://photopea.com/"><img src="icons/photopea.jpg" alt="Photopea" /></a>
+      <a href="https://dribbble.com/"><img src="icons/dribbble.jpg" alt="Dribbble" /></a>
+      <a href="https://pixilart.com/"><img src="icons/pixilart.jpg" alt="PixilArt" /></a>
+    </div>
   </body>
 </html>
