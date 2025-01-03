@@ -12,7 +12,7 @@
       body::-webkit-scrollbar{
         display: none;
       }
-      div {
+      .list {
         box-sizing: border-box;
         background-image: url(bg.jpg);
         background-size: cover;
@@ -32,7 +32,9 @@
         z-index: 50;
         translate: -50% -50%;
       }
-      a:not(.edit), img, svg {
+      .list a,
+      .list img,
+      .list svg {
         display: block;
         height: 120px;
         width: 120px;
@@ -62,7 +64,7 @@
   </head>
   <body>
     <a class="edit" href="https://github.com/myst729/portal/edit/master/index.html">https://github.com/myst729/portal/</a>
-    <div>
+    <div class="list">
       <a href="https://myst729.github.io/">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.111 16.111">
           <g transform="translate(-53.795 -280.464)">
